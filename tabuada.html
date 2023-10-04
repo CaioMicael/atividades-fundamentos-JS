@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada Avançada</title>
+    <script src="tabuada.js"></script>
+</head>
+<body>
+    <h1>Tabuada Avançada</h1>
+    <label for="inum">Número: </label>
+    <input type="number" id="inum" required>
+    <br> <br>
+    <label for="imin">Mínimo</label>
+    <input type="number" id="imin" required>
+    <label for="imax">Máximo</label>
+    <input type="number" id="imax" required>
+    <br>
+    <label for="flag">Faz a tabuada até o número informado</label>
+    <input type="checkbox" id="iflag" onclick="ValidaFlag('iflag')">
+    <br>
+    <button onclick="tabuada('inum,dresultado,imax,imin')">Exibir</button>
+    <div id="dresultado"></div>
+</body>
+</html>
