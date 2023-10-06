@@ -1,30 +1,25 @@
+
 function tabuada() {
     let num = parseInt (document.getElementById('inum').value);
     let min = parseInt (document.getElementById('imin').value);
     let max = parseInt (document.getElementById('imax').value);
     let resultado = "";
-    let flag = Boolean (document.getElementById('iflag'))
+    let flag = document.getElementById('iflag').checked;
 
-    if (flag.checked) {
-        
-        for (i = min; i <= max;i++) {
+for (i = min; i <= (flag ? num : max);i++) {
             resultado += num + " x " + i + " = " + (num * i);
             resultado += "<br>";
+            console.log(num);
         }
+        document.getElementById('dresultado').innerHTML = resultado;
     }
 
-    else {
-        for (i = min; i <= max;i++) {
-            resultado += num + " x " + i + " = " + (num * i);
-            resultado += "<br>";
-            }
-    }
-    document.getElementById('dresultado').innerHTML = resultado;
-}
 
 function ValidaFlag() {
-    let flag = Boolean (document.getElementById('iflag'))
-    if (flag.checked) [
-            document.getElementById('imax').disable = true
-    ]
+    if (document.getElementById('iflag').checked) {
+        document.getElementById('imax').disabled = true;
+    }
+    else {
+        document.getElementById('imax').disabled = false;
+    }
 }

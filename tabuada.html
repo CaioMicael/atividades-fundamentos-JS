@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabuada Avançada</title>
     <script src="tabuada.js"></script>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="tabuada.css">
 </head>
 <body>
     <h1>Tabuada Avançada</h1>
@@ -13,13 +15,15 @@
     <br> <br>
     <label for="imin">Mínimo</label>
     <input type="number" id="imin" required>
+    <br> <br>
     <label for="imax">Máximo</label>
-    <input type="number" id="imax" required>
+    <input type="number" id="imax" required >
     <br>
-    <label for="flag">Faz a tabuada até o número informado</label>
-    <input type="checkbox" id="iflag" onclick="ValidaFlag('iflag')">
+    <label for="iflag">Faz a tabuada até o número informado</label>
+    <input type="checkbox" id="iflag" onclick="ValidaFlag();">
+    <img src="hint.png" alt='Quando marcada o valor máximo sera o valor definido no campo Número'>
     <br>
-    <button onclick="tabuada('inum,dresultado,imax,imin')">Exibir</button>
+    <button onclick="tabuada('inum,dresultado,imax,imin,iflag')">Exibir Tabuada</button>
     <div id="dresultado"></div>
 </body>
 </html>
