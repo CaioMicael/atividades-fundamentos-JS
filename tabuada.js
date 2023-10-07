@@ -9,7 +9,6 @@ function tabuada() {
 for (i = min; i <= (flag ? num : max);i++) {
             resultado += num + " x " + i + " = " + (num * i);
             resultado += "<br>";
-            console.log(num);
         }
         document.getElementById('dresultado').innerHTML = resultado;
     }

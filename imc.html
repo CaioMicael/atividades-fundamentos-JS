@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular o seu IMC</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="imc.css">
+    <script src="calculo_imc.js"></script>
+</head>
+<body>
+    <h1>Calcule o seu IMC</h1>
+    <p>Para calcular seu IMC e saber seu peso ideal de acordo com sua altura, preencha as informações na calculadora abaixo e clique em Calcular</p>
+    <br>
+
+    <div class="cnome">
+        <label for="inome">Informe seu nome</label>
+            <input type="text" id="inome" placeholder="Seu nome">
+    </div>
+    <br>
+
+    <div class="csexo">
+        <label for="isexo">Selecione o sexo:</label>
+            <select name="sexo" id="isexo">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select>
+    </div>
+    <br>
+    
+    <div class="cIdade">
+        <label for="iidade">Informe sua idade</label>
+            <input type="number" placeholder="Anos" id="iidade">
+    </div>
+    <br>
+
+    <div class="caltura">
+        <label for="ialtura">Informe sua altura</label>
+            <input type="number" placeholder="Metros" id="ialtura">
+    </div>
+    <br>
+
+    <div class="cpeso">
+        <label for="ipeso">Informe seu peso</label>
+            <input type="number" placeholder="Quilos" id="ipeso">
+    </div>
+    <br>
+
+    <button type="reset">Limpar</button> <br>
+    <button onclick="CalculaIMC('inome,isexo,iidade,ialtura,ipeso,dresultado')">Calcular</button> <br>
+    <button><a id="icalcularnovamente" href="imc.html">Calcular Novamente</button></a> <br>
+
+    <div id="dresultado"></div>
+</body>
+</html>

@@ -1,8 +1,9 @@
 * {
-    padding:0;
-    margin:0;
-    vertical-align:baseline;
-    border:0
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    font-size: 15px;
     }
 
 body {
