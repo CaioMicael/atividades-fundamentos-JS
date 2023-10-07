@@ -1,4 +1,4 @@
-button {
+#ButtonTabuada {
     background-color: white;
     width: 150px;
     font-size: medium;
@@ -16,4 +16,8 @@ h1 {
 
 button:hover {
     background-color: darkgray;
+}
+
+.opcao_flag {
+    flex-direction: row;
 }

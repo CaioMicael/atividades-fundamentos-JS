@@ -6,7 +6,7 @@
     <title>Calcular o seu IMC</title>
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="imc.css">
-    <script src="calculo_imc.js"></script>
+    <script src="imc.js"></script>
 </head>
 <body>
     <h1>Calcule o seu IMC</h1>
@@ -47,9 +47,12 @@
     <br>
 
     <button type="reset">Limpar</button> <br>
-    <button onclick="CalculaIMC('inome,isexo,iidade,ialtura,ipeso,dresultado')">Calcular</button> <br>
+    <button onclick="CalculaIMC('inome,isexo,iidade,ialtura,ipeso,dresultado')" id="calcula">Calcular</button> <br>
     <button><a id="icalcularnovamente" href="imc.html">Calcular Novamente</button></a> <br>
 
-    <div id="dresultado"></div>
+    <div class="cresultado" id="dresultado"></div>
+    <br>
+
+    <button id="BotaoVoltarPagina"><a href="index.html" id="TextoVoltarPagina">Página Inicial</button></a>
 </body>
 </html>

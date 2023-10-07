@@ -10,20 +10,31 @@
 </head>
 <body>
     <h1>Tabuada Avançada</h1>
+
     <label for="inum">Número: </label>
     <input type="number" id="inum" required>
     <br> <br>
+
     <label for="imin">Mínimo</label>
     <input type="number" id="imin" required>
     <br> <br>
+
     <label for="imax">Máximo</label>
     <input type="number" id="imax" required >
     <br>
+
+    <div class="opcao_flag">
     <label for="iflag">Faz a tabuada até o número informado</label>
     <input type="checkbox" id="iflag" onclick="ValidaFlag();">
     <img src="hint.png" alt='Quando marcada o valor máximo sera o valor definido no campo Número' title="Quando marcada o valor máximo sera o valor definido no campo Número">
     <br>
-    <button onclick="tabuada('inum,dresultado,imax,imin,iflag')">Exibir Tabuada</button>
+    </div>
+
+    <button onclick="tabuada('inum,dresultado,imax,imin,iflag')" id="ButtonTabuada">Exibir Tabuada</button>
+    <br>
+
     <div id="dresultado"></div>
+
+    <button id="BotaoVoltarPagina"><a href="index.html" id="TextoVoltarPagina">Página Inicial</button></a>
 </body>
 </html>
