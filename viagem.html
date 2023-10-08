@@ -9,6 +9,12 @@
     <script src="viagem.js"></script>
 </head>
 <body>
+    <div class="container">
+        <img src="viagem.jpg" alt="Viagem" class="image">
+        <div class="overlay">
+          <div class="text">Calcule sua Viagem</div>
+        </div>
+      </div>
     <h1>Autonomia de Viagem</h1>
 
     <div class="cViagem">
@@ -31,9 +37,11 @@
         <input type="number" id="iValorLitro">
     </div> <br>
 
-    <button id="iCalcular">Calcular</button>
+    <button id="iCalcular" onclick="CalculaViagem('iViagem,iKMPercorridos,iLitrosCombustivel,iValorLitro,dresultado')">Calcular</button>
     <br>
     <button><a id="icalcularnovamente" href="viagem.html">Limpar</button></a> <br>
+
+    <div class="cresultado" id="dresultado"></div>
 
     <button id="BotaoVoltarPagina"><a href="index.html" id="TextoVoltarPagina">Página Inicial</button></a>
 </body>

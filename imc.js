@@ -36,3 +36,13 @@ function CalculaIMC() {
 
     document.getElementById('dresultado').innerHTML = resultado;
 }
+
+
+function DesabilitaExemplo() {
+    document.getElementById('TextoExemplo').remove()
+}
+
+
+function DesabilitaExemplo1() {
+    document.getElementById('TextoExemplo1').remove()
+}

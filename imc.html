@@ -36,13 +36,15 @@
 
     <div class="caltura">
         <label for="ialtura">Informe sua altura</label>
-            <input type="number" placeholder="Metros" id="ialtura" maxlength="3">
+            <input type="number" placeholder="Metros" id="ialtura" onkeydown="DesabilitaExemplo('TextoExemplo')">
+            <p id="TextoExemplo">Exemplo 1.82</p>
     </div>
     <br>
 
     <div class="cpeso">
         <label for="ipeso">Informe seu peso</label>
-            <input type="number" placeholder="Quilos" id="ipeso">
+            <input type="number" placeholder="Quilos" id="ipeso" onkeydown="DesabilitaExemplo1('TextoExemplo1')">
+            <p id="TextoExemplo1">Exemplo 82.50</p>
     </div>
     <br>
 

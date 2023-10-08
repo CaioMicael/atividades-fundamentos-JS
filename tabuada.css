@@ -14,7 +14,7 @@ h1 {
     font-size: 25px;
 }
 
-button:hover {
+#ButtonTabuada:hover {
     background-color: darkgray;
 }
 
