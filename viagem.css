@@ -1,0 +1,37 @@
+.cViagem {
+    width: 300px;
+    padding: 10px 5px;
+    background-color: darkgray;
+}
+
+.cKMPercorridos {
+    width: 300px;
+    padding: 10px 5px;
+    background-color: darkgray;
+}
+
+.cLitrosCombustivel {
+    width: 300px;
+    padding: 10px 5px;
+    background-color: darkgray;
+}
+
+.cValorLitro {
+    width: 300px;
+    padding: 10px 5px;
+    background-color: darkgray;
+}
+
+button {
+    background-color: white;
+    width: 200px;
+ }
+
+ button:hover {
+    background-color: darkgray;
+}
+
+#icalcularnovamente {
+    text-decoration: none;
+    color: black;
+}
